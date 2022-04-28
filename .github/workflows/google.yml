@@ -18,12 +18,10 @@ on:
       - main
 
 env:
-  PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GAR_LOCATION: us-central1-c 
-  GKE_CLUSTER: example-app  
-  GKE_ZONE: us-central1-c   
-  DEPLOYMENT_NAME: gke-test 
-  REPOSITORY: ./k8s
+  PROJECT_ID: ${{ secrets.GKE_PROJECT_DEV }}
+  GKE_CLUSTER: example-app
+  GKE_ZONE: us-central1-c
+  DEPLOYMENT_NAME: test-app
   IMAGE: static-site
 
 jobs:
